@@ -4,7 +4,7 @@ metadata:
   name: job-scraper-bot
   namespace: flux-system
 spec:
-  image: ghcr.io/pt-sinan-akbar/job-scraper-bot
+  image: ghcr.io/pt-sinan-akbar/job-scraper-bot/prod
   interval: 10m
   secretRef:
     name: flux-registry-creds
