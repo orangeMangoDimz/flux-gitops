@@ -4,7 +4,7 @@ metadata:
   name: job-agent-fe
   namespace: flux-system
 spec:
-  image: ghcr.io/dta32/job-agent-fe/prod
+  image: ghcr.io/pt-sinan-akbar/job-agent-fe/prod
   interval: 10m
   secretRef:
     name: flux-registry-creds

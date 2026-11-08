@@ -152,7 +152,7 @@ spec:
     - name: job-agent
       protocol: HTTPS
       port: 443
-      hostname: job-agent.dta32.my.id
+      hostname: job-agent.dimasdanizaini.xyz
       tls:
         mode: Terminate
         certificateRefs:

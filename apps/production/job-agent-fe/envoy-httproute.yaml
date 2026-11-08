@@ -9,7 +9,7 @@ spec:
       namespace: envoy
       sectionName: job-agent
   hostnames:
-    - job-agent.dta32.my.id
+    - job-agent.dimasdanizaini.xyz
   rules:
     - matches:
         - path:
