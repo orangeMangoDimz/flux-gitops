@@ -13,3 +13,4 @@ resources:
   - bandung-coffeeshop-fe
   - job-agent-be
   - job-agent-fe
+  - job-scrapper-revamp
