@@ -29,7 +29,7 @@ spec:
               imagePullPolicy: IfNotPresent
               command:
                 - /bin/sh
-                - /workspace/scraper-bot/cron/run-scraper.sh
+                - /workspace/scraper-bot/cron/run-scheduled-scraper.sh
               envFrom:
                 - configMapRef:
                     name: job-scrapper-revamp-config
