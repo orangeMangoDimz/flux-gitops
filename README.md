@@ -249,6 +249,8 @@ Key names come from what the manifests reference. Namespaces other than `flux-sy
 | `prod`        | `vern-secret`                        | `APP_KEY` `DB_CONNECTION` `DB_HOST` `DB_PORT` `DB_DATABASE` `DB_USERNAME` `DB_PASSWORD` `GOOGLE_CLIENT_ID` `GOOGLE_CLIENT_SECRET` `GOOGLE_REDIRECT_URL` `MAIL_MAILER` `MAIL_HOST` `MAIL_PORT` `MAIL_USERNAME` `MAIL_PASSWORD` `MAIL_FROM_ADDRESS` `MAIL_FROM_NAME` `MIDTRANS_CLIENT_KEY` `MIDTRANS_SERVER_KEY` `MIDTRANS_MERCHANT_ID` `MIDTRANS_PRODUCTION` |
 | `dev`         | `postgres-postgis-secret`            | `POSTGRES_PASSWORD` `PGDATA`                                                                                                                                                                                                                                                                                                                                |
 | `dev`         | `bandung-coffeeshop-be-secret`       | `DB_USER` `DB_NAME` `DB_PASSWORD`                                                                                                                                                                                                                                                                                                                           |
+| `dev`         | `ghcr-pull`                          | `.dockerconfigjson` — ghcr.io login, classic PAT with `read:packages` only |
+| `dev`         | `job-agent-be-secret`                | `API_SECRET_KEY` `DATABASE_POSTGRES_DB` `DATABASE_POSTGRES_USER` `DATABASE_POSTGRES_PASSWORD` `CACHE_REDIS_URL` `DATABASE_MONGO_URI` `STORAGE_R2_*` |
 
 `PGDATA` is a subdirectory of the volume mount, for example `/var/lib/postgresql/data/pgdata`.
 

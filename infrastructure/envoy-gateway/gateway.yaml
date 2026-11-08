@@ -162,6 +162,19 @@ spec:
         namespaces:
           from: Same
 
+    - name: dev-job-agent
+      protocol: HTTPS
+      port: 443
+      hostname: dev.job-agent.dimasdanizaini.xyz
+      tls:
+        mode: Terminate
+        certificateRefs:
+          - kind: Secret
+            name: dev-job-agent-tls
+      allowedRoutes:
+        namespaces:
+          from: Same
+
     - name: ci
       protocol: HTTPS
       port: 443
