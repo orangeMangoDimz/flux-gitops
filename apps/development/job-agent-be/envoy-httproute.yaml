@@ -25,6 +25,8 @@ spec:
         - name: job-agent-be-service
           namespace: dev
           port: 80
+      timeouts:
+        request: 1h
     - matches:
         - path:
             type: PathPrefix
