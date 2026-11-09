@@ -1,0 +1,13 @@
+apiVersion: gateway.envoyproxy.io/v1alpha1
+kind: SecurityPolicy
+metadata:
+  name: job-agent-dev-basicauth
+  namespace: envoy
+spec:
+  targetRefs:
+    - group: gateway.networking.k8s.io
+      kind: HTTPRoute
+      name: job-agent-fe-dev
+  basicAuth:
+    users:
+      name: job-agent-dev-basic-auth
